@@ -1,0 +1,136 @@
+<!DOCTYPE HTML />
+<html>
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,700i" rel="stylesheet">
+</head>
+
+<style>
+body{
+    background-image:url('https://media.istockphoto.com/photos/green-poker-table-felt-background-picture-id467583755?k=6&m=467583755&s=612x612&w=0&h=yYdwoNN2UZkMCxAAEf5PyltMphePlfEAzw6oEeYMpEU=');
+}
+.dealer_container{
+    display:flex;
+    justify-content: center;
+    margin-bottom:15px;
+    flex-direction: row;
+}
+.dealer_card{
+    border:3px solid white;
+    height:25%;
+    background-color: white;
+    width:115px;
+    margin:14px;
+}
+.player_container{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.player_card{
+    border:3px solid white;
+    height:25%;
+    background-color: white;
+    width:115px;
+    margin:14px;
+}
+.hit_or_stay{
+    display:flex;
+    justify-content: center;
+}
+.hit_or_stay button{
+    padding:15px;
+    margin:15px;
+    width:12%;
+    height:8%;
+    background-color:#830303;
+    transition: .500ms ease-in-out;
+    color:white;
+    border: 4px solid #8f1c1c;
+    font-size:1em;
+    font-family:Merriweather;
+    box-shadow: 2px 2px 2px #750202;
+    letter-spacing: 4px;
+}
+.hit_or_stay button:hover{
+    background-color:#9b3535;
+    border: 4px solid #680202;
+    cursor:pointer;
+}
+
+    h1{
+        text-align: center;
+    }
+    .rank{
+        font-size:2rem;
+        font-family:Merriweather;
+        padding-bottom:1em;
+        font-weight:700;
+        display:flex;
+        margin-top:1em;
+        width:100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .symbol{
+        display: flex;
+        font-weight:700;
+        justify-content: center;
+        height: 100%;
+        font-size: 2rem;
+        width: 100%;
+        align-items: center;
+        margin-top: -4rem
+    }
+    .symbol2{
+        display: flex;
+        font-weight:700;
+        justify-content: center;
+        height: 100%;
+        font-size: 2rem;
+        width: 100%;
+        align-items: center;
+        margin-top: -6rem
+    }
+    #reset{
+        display:none;
+        margin:0 auto;
+    }
+    #description{
+        font-family: 'Merriweather', serif;
+        letter-spacing:5px;
+    }
+    #description_dealer{
+        font-family: 'Merriweather', serif;
+        letter-spacing:5px;
+    }
+
+</style>
+<body>
+    <h1 id = "description_dealer">Dealer : <span id = "dealer_score"></span></h1>
+
+    <div class = "dealer_container">
+
+    </div>
+    <h1 id = "description">Player : <span id = "player_score"></span></h1>
+
+    <div class = "player_container">
+
+
+    </div>
+    <div class = "hit_or_stay">
+        <button id = "hit">Hit</button>
+        <button id = "stay">Stay</button>
+        <button id = "reset">Reset</button>
+    </div>
+
+
+
+
+
+
+</body>
+
+<script src = "script.js"></script>
+</html>
